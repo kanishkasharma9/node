@@ -1,0 +1,40 @@
+
+<%- include('./base/header.ejs') %>
+
+  <!-- Page 1 Layout: Login Form and Welcome Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Login Section -->
+      <div class="col-md-6">
+        <h3 style="color:white">Login</h3>
+        <form action="/login/user" method="POST">
+          <div class="mb-3">
+            <label for="userId" class="form-label" style="color: white" >User ID:</label>
+            <input type="text" class="form-control" id="userId" name="userId" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label"style="color:white">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="mb-3">
+            <a href="/registeration">...Register here</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Welcome Section -->
+      <div class="col-md-6 text-center">
+        <h3 style="color:white">Welcome to RD college</h3>
+        <img src="/image.png" alt="College Logo" class="img-fluid mb-3" style="max-width: 150px;">
+        <br>
+        <a href="/registeration" class="btn btn-success">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./base/footer.ejs') %> 
+
+
+
+
